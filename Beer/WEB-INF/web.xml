@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <servlet>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <servlet-class>com.test.FileDownload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Add Customer</servlet-name>
+    <servlet-class>com.test.CustomersSystem</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Query Customers</servlet-name>
+    <servlet-class>com.test.CustomerQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Delete Customer</servlet-name>
+    <servlet-class>com.test.CustomerDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Edit Customer</servlet-name>
+    <servlet-class>com.test.CustomerEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Search Customer</servlet-name>
+    <servlet-class>com.test.CustomerSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login System</servlet-name>
+    <servlet-class>com.test.SystemLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <url-pattern>/SelectBeer.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Add Customer</servlet-name>
+    <url-pattern>/CustomersSystem.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Query Customers</servlet-name>
+    <url-pattern>/CustomerQuery.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Delete Customer</servlet-name>
+    <url-pattern>/CustomerDelete.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Edit Customer</servlet-name>
+    <url-pattern>/CustomerEdit.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Search Customer</servlet-name>
+    <url-pattern>/CustomerSearch.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login System</servlet-name>
+    <url-pattern>/Login.do</url-pattern>
+  </servlet-mapping>
+</web-app>
